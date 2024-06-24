@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="bk_img" >
+    <div class="heading" style="text-align: center;"><h1 style="text-decoration:underline dashed rgb(0, 0, 0); color: rgb(0, 0, 0); margin: 3vh;">___Notes___</h1></div>
+    <div id="search_box"><input id="search_bar" type="text" placeholder="Search Notes" style="font-size: larger; margin: 2vh;"><br>
+      <ul id="ordered_list" style="display: none; position: absolute;" type="none" >
+      </ul>
+    </div>
+    <br>
+      <div class="create_notes" style="text-align: center;"><button class="button" id="add_notes" style="padding: 0; margin: 0; width: 8vh; height: 8vh; font-size: 5vh; border-radius: 100vh; ">+</button>
+      </div>
+  </div>
+    <hr style="margin-top: 2vh;">
+    <div id="notes_collection"></div>
+    <div style="text-align: center; padding-top: 5vh;"><button id="left_button" class="button"><</button>
+      <span id="page_no" style="border: 1px rgb(70, 70, 70) solid; padding: 0 2vw;">0</span>
+      <button id="right_button" class="button">></button>
+    </div>
+    <dialog class="dialog_window">
+        <div><h2>Create Notes</h2></div>
+        <div class="form">
+            <form method="dialog">
+              <p><label>Title: <input id="title_" type="text" name="title" required></label></p>
+              <p><label>Notes: <textarea id="notes_" name="body" rows="10"></textarea></p>
+            </form>
+          </div>
+          <div class="button_">
+            <button class="button" id="cancel" >Cancel</button>
+            <button class="button" id="create" >Create</button>
+          </div>
+    </dialog>
+    <dialog class="edit_dialog">
+      <div><h2>Update Notes</h2></div>
+      <div class="eform">
+          <form method="dialog">
+            <p><label>Title: <input id="etitle_" type="text" name="title" required></label></p>
+            <p><label>Notes: <textarea id="enotes_" name="body" rows="10"></textarea></p>
+            <p><input type="text" id="date_created_html" style="display: none;"></p>
+          </form>
+        </div>
+        <div class="ebutton">
+          <button id="ecancel" class="button">Cancel</button>
+          <button id="ecreate" class="button">Save</button>
+        </div>
+  </dialog>
+  <div id="dia_"></div>
+    <script src="test.js"></script>
+</body>
+</html>
+
+

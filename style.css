@@ -1,0 +1,82 @@
+.box {
+    background-color: bisque;
+    margin-left: 10wh;
+    margin-right: 10wh;
+    margin-top: 10vh;
+    }
+    .ol_list{
+      font-size: 3vh;
+      background-color: white;
+    }
+    .ol_list:hover{
+      background-color: rgb(218, 219, 219);
+    }
+    #search_bar{
+      border-radius: 5vh;
+      box-shadow: 1.5vh 1vh 2vh rgb(92, 92, 92);
+      height: 5vh;
+      width: 20vw;
+      border: none;
+
+    }
+    #ordered_list {
+      box-shadow: 1.5vh 1vh 2vh rgb(92, 92, 92);
+      border: 0.5px rgb(95, 95, 95) solid;
+      width: 20vw;
+      background-color: white;
+
+    }
+    .button{
+      background-color: rgb(60, 60, 255); 
+      border-radius: 1vh;
+      color: white;
+      padding: 2vh 2vw ;
+      margin: 0.5vh 0.25vw;
+      border: none;
+    }
+    .button:hover{
+      scale: 1.05;
+      background-color:rgb(98, 98, 254);
+    }
+    .box{
+      box-shadow: 1.5vh 1vh 3vh rgb(180, 179, 179);
+      border-radius: 10vh;
+      text-align: center;
+
+    }
+    #close, #close_{
+      background-color: white;
+      float: right;
+      color: rgb(49, 49, 49);
+      border: 0.2px rgb(101, 101, 101) solid;
+    }
+    #close:hover{
+      scale: 1.05;
+    }
+    #close_:hover{
+      scale: 1.05;
+    }
+    #dia{
+      background-color: rgb(239, 255, 255);
+      height: 30vh;
+      width: 30vw;
+      border-radius: 2vh;
+      border: 1px rgb(129, 128, 128) solid;
+    }
+    .bk_img{
+      background-image: url('note_img.jpeg');
+      object-fit: contain;
+    }
+    @media screen and (max-width: 600px) {
+        #dia{
+            width: 60vw;
+            height: 70vh;
+        }
+        #search_bar{
+            width: 50vw;
+        }
+        #ordered_list{
+            width: 50vw;
+        }
+
+    }
